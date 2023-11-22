@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*  VARIABEL  */
+
+:root {
+    --background-color: #16161a;
+    --button: #ffd803;
+    --buttonText: #272343;
+    --headline: #fffffe;
+    --paragraf: #94a1b2;
+    --paragrafHover: #2d334a97;
+    --secondary2: #484c52;
+
+    --main: #fffffe;
+    --higlight: #ffd803;
+    --secondary: #242629;
+    --tertiary: #bae8e8;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color: var(--headline);
+}
+
+p {
+    font-size: 1rem; /* 16 Pixel*/
+    color: var(--paragraf);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.span-h2 {
+    color: var(--higlight);
+    position: relative;
+    animation: animate 2.5s;
+    text-shadow: 0 0px 7px var(--higlight);
+    font-weight: 500;
+
+    color: var(--button);
+}
+
+svg {
+    text-align: center;
+
+    fill: var(--headline);
+    font-size: 40px;
+    width: 40px;
+
+    margin-left: 20px;
+}
+
+
+
+
+/*  BURGER  */
+
+.burger div{
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 7px;
+    transition: all .3s;
+
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    z-index: 99;
+
+    top: 33px;
+    right: 35px;
+}
+
+
+
+
+
+/* Logo And Navigation */
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: var(--paragraf);
+    letter-spacing: 1px;
+    padding: 14px;
+    transition: .7s ease;
+    position: sticky;
+    top: 1;
+}
+
+
+/* HOVER -NAV */
+
+.nav li a::before{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    transition: 0.6s;
+    border-radius: 3px;
+    transform: scalex(0);
+    background: var(--higlight);
+    box-shadow: 0 2px 15px var(--higlight);
+}
+
+.nav li a:hover {
+    font-size: 17px;
+    color: var(--headline);
+    text-shadow: 0 2px 20px var(--headline);
+}
+
+.nav li a:hover:before{
+    transform: scaleX(1.2);
+    font-size: 18px;
+}
+
+.nav li a:active {
+    color: var(--button);
+    transition: .5s ease;
+}
+
+
+
+
+/* logo */
+
+.logo {
+    font-size: 14px;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* Top Container <main> Pertama */
+
+/* Top  */
+.top {
+    background-color: var(--background-color);
+    height: 700px;
+}
+
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17rem;  /* Ngasih jarak antar Keduanya*/
+    padding-top: 50px;
+   
+}
+
+.img-top {
+    width: 500px;
+    position: relative;
+    animation: animate2 2.7s ;
+}
+
+.right-txt .h2-right-txt, .h4-right-txt, .p1-right-txt{
+    text-align: right;
+    letter-spacing: 1px;
+    position: relative;
+    animation: animate 3s ;
+}
+
+
+.h4-right-txt {
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-weight: 300;
+}
+.span-h4 {
+    color: var(--higlight);
+    text-shadow: 0 1px 5px var(--higlight);
+}
+
+
+
+/*  KEYFRAME HOME  */
+
+@keyframes animate {
+    0% {
+        top: 290px; color: rgba(255, 255, 255, 0);
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        right: 800px; color: rgba(255, 255, 255, 0);
+    }
+    100% {
+        right: 0;
+    }
+}
+
+
+
+
+
+
+
+/* Bagian Mid ( Education ) */
+
+.mid {
+    border-radius: 5px;
+    height: 800px;
+}
+
+.container-txt {
+    padding: 20px;
+}
+
+.Sub-judul {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.mid-container {
+    margin: 70px 25px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: var(--higlight);
+    box-shadow: 0 2px 15px var(--higlight);
+    display: flex;
+    justify-content: space-between;
+
+    gap: 3rem;
+}
+
+.education-name {
+    text-align: left;
+    color: var(--background-color);
+}
+
+
+.rgh {
+    width: 50%;
+    text-align: justify;
+    align-items: normal;
+    color: var(--background-color);
+}
+
+.GIF {
+    width: 300px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+
+/* Bagian Project */
+
+.container-txt-gif {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid-container2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 250px;
+}
+
+
+/* BAGIAN PROJECT */
+
+
+.project {
+    height: 700px;
+    border-radius: 7px;
+    background-color: var(--secondary2);
+}
+
+.container-padding-project {
+    padding: 30px;
+}
+
+
+.header-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.sub-project {
+    letter-spacing: 10px;
+    font-size: 17px;
+    color: var(--headline);
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.662);
+}
+
+.title-project {
+    letter-spacing: 3px;
+    font-size: 19px;
+    color: var(--headline);
+    font-weight: 500;
+    
+}
+
+.project-img-container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+/* IMG PROJECT */
+
+.project-img1 {
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.447);
+}
+
+.project-img2 {
+    width: 380px;
+    border-radius: 5px;
+}
+
+/*  CARD PEOJECT  */
+
+.card-project {
+    padding: 20PX;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    /* background-color: #1e1e1e5b; */
+    border: 2px solid var(--paragraf);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hover-project {
+    transition: all .4s ease;
+    height: 490px;
+}
+
+/* HOVER CARD PROJECT */
+
+.hover-project:hover{
+    margin-top: -9px;
+    /* transform: scale(1.1); */
+    transition: all .4s ease;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.329);
+}
+
+
+
+.title-card {
+    padding: 30px 20px;
+    color: #ffffff;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.662);
+}
+
+
+/* BAGIAN SERTIFIKAT */
+
+.sertifikat {
+    height: 700px;
+    background-color: var(--secondary);
+    margin-top: 60px;
+}
+
+.container-all-sertifikat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+.title-sertifikat {
+    letter-spacing: 13px;
+    color: var(--headline);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 19px;
+}
+
+.title-sertifikat2 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.img-sertifikat {
+    margin: 30px auto;
+}
+
+.sertifikat-img {
+    width: 700px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.477);
+
+    transition: all .5s ease;
+}
+
+.sertifikat-img:hover {
+    box-shadow: 0 2px 40px rgba(99, 99, 99, 0.628);
+    transition: all .5s ease;
+}
+
+
+
+
+
+/* contact */
+
+#Contact {
+    padding: var(--higlight);
+    margin-top: 70px;
+}
+
+.sub-contact-content {
+    letter-spacing: 5px;
+    color: var(--headline);
+
+}
+
+.container-flex-contact {
+    display: flex;
+}
+
+/* .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, ifr));
+    gap: 3rem;
+} */
+
+.icon1, .icon2 {
+    margin: 0 auto;
+    margin: 10px 18px;
+}
+
+.contact-left {
+    padding: 0 30px;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 500px;
+    padding: .75rem 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    background: var(--secondary);
+    border: 1px solid var(--higlight);
+    border-radius: 3px;
+    resize: none; 
+    
+    color: var(--headline);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--tertiary);
+}
+
+.btn-sumbit {
+    width: 300px;
+    padding: 24px 20px;
+    background-color: var(--higlight);
+    color: var(--buttonText);
+    border: none;
+    border-radius: 3px;
+   
+}
+
+.btn-sumbit:hover{
+    background: var(--secondary);
+    color: var(--headline);
+    border: 1px solid var(--headline);
+
+    transition: all .4s ease;
+}
+
+/* .contact-right {
+    margin: 0 auto;
+    display: flex;
+} */
+
+
+
+
+
+/* Bagian Footer */
+
+footer {
+    height: 80px;
+    border-top: 3px solid var(--headline);  /* Footer Line */
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-top: 20px;
+}

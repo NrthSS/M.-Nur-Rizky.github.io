@@ -1,0 +1,209 @@
+:root {
+  --background-color: #16161a;
+  --button: #ffd803;
+  --buttonText: #272343;
+  --headline: #fffffe;
+  --paragraf: #94a1b2;
+  --paragrafHover: #2d334a97;
+  --secondary2: #484c52;
+
+  --main: #fffffe;
+  --higlight: #ffd803;
+  --secondary: #242629;
+  --tertiary: #bae8e8;
+}
+
+@media screen and (max-width: 1200px){
+  .top-container {
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 825px){
+
+  .logo {
+    display: none;
+  }
+  
+  /* BURGER */
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    position: fixed;
+    width: 40%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-left: 1px solid var(--secondary2);
+    z-index: 9;
+    transform: translateX(100%);
+
+    transition: .4s ease-in-out;
+  }
+
+  nav ul {
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  .nav li a {
+    letter-spacing: 5px;
+    color: #fff;
+  }
+
+  .nav-active {
+    transform: translateX(0);
+
+  }
+  .top-container {
+    align-items: center;
+    margin: 0 auto;
+  }
+  .mid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 700px;
+  }
+  .mid-container2 {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    
+  }
+  .container-txt-gif {
+    align-items: center;
+
+  }
+
+
+  .project {
+    margin-top: 100px;
+  }
+
+
+  /* TXT RGH */
+  .rgh {
+    font-size: 17px;
+    letter-spacing: 3px;
+    width: 80%;
+    font-weight: 500;
+  }
+
+
+  /* IMG_PROJETCT */
+
+  .project {
+    height: 1200px;
+    background-color: var(--secondary);
+  }
+
+  /* .project-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  } */
+
+  .title-card {
+    letter-spacing: 6px;
+    margin-top: 3px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+      padding: 0 30px;
+    }
+
+
+    /*  BAGIAN BURGER  */
+    /* .burger {
+      display: block;
+      position: sticky;
+      top: 0;
+
+      padding-block: 1;
+    } */
+
+
+
+
+    /* Bagian Header */
+
+    header {
+      padding-block: 1;
+
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 120px;
+    }
+    .nav ul {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .nav li a {
+      font-size: 25px;
+      letter-spacing: 5px;
+      color: rgb(255, 255, 255);
+    }
+    .nav li a:hover{
+      font-size: 22px;
+    }
+    .logo {
+      font-size: 17px;
+      margin-top: 15px;
+    }
+
+
+    /* Bagian Home Page Awal */
+    
+    .top {
+      height: 1000px;
+    } 
+    .top-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .img-top {
+      width: 700px;
+    }
+    .right-txt {
+      margin-top: 20px;
+    }
+    .right-txt .h2-right-txt, .h4-right-txt, .p1-right-txt{
+      text-align: center;
+      font-size: 23px;
+    }
+
+
+    /* BAGIAN EDUCATION */
+    
+    .container-txt-gif {
+      width: 860px;
+    }
+}
