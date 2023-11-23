@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto:wght@400;500&family=Rubik&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -141,6 +142,8 @@ body {
     font-size: 17px;
     color: var(--headline);
     text-shadow: 0 2px 20px var(--headline);
+
+    letter-spacing: 3px;
 }
 
 .nav li a:hover:before{
@@ -211,7 +214,6 @@ body {
 }
 
 
-
 /*  KEYFRAME HOME  */
 
 @keyframes animate {
@@ -256,19 +258,28 @@ body {
 
 .mid-container {
     margin: 70px 25px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 3px;
-    background-color: var(--higlight);
-    box-shadow: 0 2px 15px var(--higlight);
+    background-color: var(--paragrafHover);
+    box-shadow: 0 2px 15px var(--paragrafHover);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     gap: 3rem;
 }
 
 .education-name {
     text-align: left;
-    color: var(--background-color);
+    color: var(--headline);
+    letter-spacing: 1px;
+}
+
+.education-name2 {
+    text-align: left;
+    color: #cfcfcf;
+    letter-spacing: 1px;
+    padding: 15px 0;
 }
 
 
@@ -276,7 +287,7 @@ body {
     width: 50%;
     text-align: justify;
     align-items: normal;
-    color: var(--background-color);
+    color: var(--headline);
 }
 
 .GIF {
@@ -308,7 +319,7 @@ body {
 .project {
     height: 700px;
     border-radius: 7px;
-    background-color: var(--secondary2);
+    background-color: #fffffe;
 }
 
 .container-padding-project {
@@ -326,14 +337,14 @@ body {
 .sub-project {
     letter-spacing: 10px;
     font-size: 17px;
-    color: var(--headline);
-    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.662);
+    color: var(--background-color);
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.756);
 }
 
 .title-project {
     letter-spacing: 3px;
     font-size: 19px;
-    color: var(--headline);
+    color: var(--background-color);
     font-weight: 500;
     
 }
@@ -341,7 +352,7 @@ body {
 .project-img-container {
     padding: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
@@ -361,16 +372,20 @@ body {
 /*  CARD PEOJECT  */
 
 .card-project {
-    padding: 20PX;
+    padding: 20px;
     width: 450px;
     height: 500px;
     border-radius: 10px;
     /* background-color: #1e1e1e5b; */
-    border: 2px solid var(--paragraf);
+    /* border: 2px solid var(--paragraf); */
+    /* background-color:  rgb(32, 32, 32); */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+/* HOVER PROJECT */
 
 .hover-project {
     transition: all .4s ease;
@@ -379,18 +394,23 @@ body {
 
 /* HOVER CARD PROJECT */
 
-.hover-project:hover{
+/* .hover-project:hover{
     margin-top: -9px;
-    /* transform: scale(1.1); */
+    transform: scale(1.1); 
     transition: all .4s ease;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.329);
-}
+    box-shadow: 0px 2px 25px 2px rgb(73, 69, 69);
+    border-radius: 8px;
+    background-color: rgb(32, 32, 32); 
+} */
 
 
 
 .title-card {
+    letter-spacing: 3px;
+    font-weight: 500;
+
     padding: 30px 20px;
-    color: #ffffff;
+    color: #000000;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.662);
 }
 
@@ -437,7 +457,7 @@ body {
 }
 
 .sertifikat-img:hover {
-    box-shadow: 0 2px 40px rgba(99, 99, 99, 0.628);
+    box-shadow: 0 2px 40px 1px rgba(255, 255, 255, 0.887);
     transition: all .5s ease;
 }
 
@@ -471,11 +491,20 @@ body {
     justify-content: end;
 }
 
-/* .contact {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, ifr));
-    gap: 3rem;
-} */
+
+/* STYLE INPUT */
+
+textarea{
+    transition: .9s ease;
+}
+
+textarea:active {
+    box-shadow: 0 1px 70px #fff;
+    transition: .9s ease;
+}
+
+
+
 
 .contact-item-icon1, .contact-item-icon2, .contact-item-icon3 {
     display: flex;
@@ -500,6 +529,7 @@ h5 {
 
 
     margin-right: 30px;
+    transition: all .5s ease;
 }
 
 .mid-icon {
@@ -530,7 +560,7 @@ a {
     padding: .75rem 1.3rem;
     font-family: 'Roboto', sans-serif;
     background: var(--secondary);
-    border: 1px solid var(--higlight);
+    border: 1px solid #fff;
     border-radius: 3px;
     resize: none; 
     
@@ -551,25 +581,25 @@ a {
     border: none;
     border-radius: 3px;
 
-    transition: all .4s ease;
-   
-   
+    transition: all .6s ease;  
 }
 
 .btn-sumbit:hover{
     background: transparent;
     color: var(--headline);
-    border: 1px solid var(--higlight);
+    border: 1px solid #fff;
 
-    transition: all .4s ease;
-     box-shadow: 0 0 5px var(--higlight);
+    transition: all .6s ease;
+    box-shadow: 0 0 5px #fff;
+
+    letter-spacing: 3px;
+    padding-right: 150px;
 }
 
-/* .contact-right {
-    margin: 0 auto;
-    display: flex;
-} */
-
+.contact-icon:hover {
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
 
 
 
@@ -577,16 +607,84 @@ a {
 /* Bagian Footer */
 
 footer {
-    height: 80px;
-    border-top: 3px solid var(--headline);  /* Footer Line */
+    height: 280px;
     border-radius: 3px;
     margin-top: 30px;
+
+    /* background-color: var(--higlight); */
+    background-image: url(images/GIF\ FOOTER.gif);
+    background-size: cover;
+
+    box-shadow: 0 1px 16px 3px#000000;
 }
 
-.footer {
-    align-items: center;
+/* LINK FOOTER */
+a {
+    color: var(--headline);
+
+}
+
+.container-footer {
+    padding: 40px;
     display: flex;
-    justify-content: center;
-    font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-left {
+    width: 300px;
+}
+
+.title-left .title-h4 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 1px 5px #ffffff;
+}
+
+.container-footer .title {
+    color: var(--background-colore);
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 27px;
+    
+}
+
+.p-title {
+    transition: .6s ease;
+}
+
+.paragraf {
+    color: #fff;
+    text-align: center;
     padding-top: 20px;
 }
+
+
+
+.footer-1 {
+    color: #fff;
+    padding-left: 20px;
+    text-align: right;
+}
+
+/* Paragraf */
+
+.container-p-footer {
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+/* Hover FOOTER */
+
+.p-title:hover {
+    letter-spacing: 2px;
+    transition: all .6s ease;
+    font-size: 20px;
+    color: blue;
+    
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+

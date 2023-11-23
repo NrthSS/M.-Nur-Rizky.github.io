@@ -51,7 +51,8 @@
     height: 100%;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-top: 200px;
     font-size: 28px;
   }
 
@@ -74,7 +75,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 700px;
+    height: 800px;
   }
   .mid-container2 {
     justify-content: center;
@@ -84,12 +85,11 @@
   }
   .container-txt-gif {
     align-items: center;
-
   }
 
 
   .project {
-    margin-top: 100px;
+    margin-top: 300px;
   }
 
 
@@ -104,7 +104,7 @@
 
   /* IMG_PROJETCT */
 
-  .project {
+  /* .project {
     height: 1200px;
     background-color: var(--secondary);
   }
@@ -115,12 +115,12 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-  } */
+  } 
 
   .title-card {
     letter-spacing: 6px;
     margin-top: 3px;
-  }
+  } */
 }
 
 
@@ -147,13 +147,13 @@
 
     /* Bagian Header */
 
-    header {
+    /* header {
       padding-block: 1;
 
       position: sticky;
       top: 0;
       z-index: 999;
-    }
+    } */
     .nav {
       display: flex;
       flex-direction: column;
@@ -207,3 +207,249 @@
       width: 860px;
     }
 }
+
+
+
+
+
+
+
+
+/*  RESPONSIVE 425px  */
+
+@media screen and (max-width: 425px){
+  
+
+  .top {
+    height: 1870px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-top {
+    width: 900px;
+    margin-bottom: 200px;
+  }
+
+  .right-txt .h2-right-txt, .h4-right-txt, .p1-right-txt{
+    font-size: 36px;
+    width: 750px;
+  }
+
+
+  /*  EDUCATION  */
+
+  .mid {
+    height: 1700px;
+  }
+
+  .container-txt {
+    padding: 30px;
+  }
+
+  .Sub-judul {
+    font-size: 30px;
+  }
+
+  .mid-container {
+    margin: 55px 10px;
+    display: flex;
+    justify-content: start;
+    padding: 100px;
+
+    height: 1500px;
+  }
+
+  .education-name {
+    font-size: 30px;
+    width: 400px;
+    text-align: center;  
+    letter-spacing: 4px;
+
+    font-weight: 500;
+  }
+
+  .education-name2 {
+    letter-spacing: 3px;
+    font-size: 25px;
+
+    padding: 20px;
+  }
+
+  .rgh {
+    width: 700px;
+    font-size: 26px;
+    text-align: center;
+
+    margin-top: 30px;
+  }
+
+  .GIF {
+    width: 600px;
+    height: 300px;
+    margin-top: 150px;
+  }
+
+  /*  PROJECT RESPONSIVE  */
+
+  .project {
+    height: 1877px;
+    background-color: #d8d8d8;
+  }
+
+  .container-padding-project {
+    padding: 40px;
+  }
+
+  .sub-project {
+    font-size: 30px;
+  }
+
+  .title-project {
+    font-size: 27px;
+  }
+
+  .project-img-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-img1 {
+    width: 600px;
+  }
+
+  .project-img2 {
+    margin-top: 100px;
+    width: 580px;
+  }
+
+  .card-project {
+    width: 600px;
+    height: 800px;
+    
+    margin: 40px auto;
+  }
+
+  .hover-project {
+    height: 690px;
+  }
+
+  .title-card {
+    font-size: 25px;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 40px;
+    color: var(--buttonText);
+  }
+
+  .title-card2 {
+    letter-spacing: 7px;
+    font-size: 19px;
+
+    color: var(--buttonText);
+  }
+
+/*  SERTIFIKAT RESPONSIVE  */
+
+  .sertifikat {
+    height: 1000px;
+  }
+
+  .container-all-sertifikat {
+    align-items: center;
+    padding: 40px 40px;
+  }
+
+  .title-sertifikat {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .title-sertifikat2 {
+    font-size: 20px;
+  }
+
+  .sertifikat-img {
+    width: 900px;
+  }
+
+
+  /*  CONTACT RESPONSIVE  */
+
+  .sub-contact-content {
+    font-size: 30px;
+  }
+
+  .container-flex-contact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 30px;
+  }
+
+  .mid-icon {
+    margin-left: -70px;
+  }
+  .contact-item-icon2{
+    margin: auto 200px;
+  }
+
+  .icon3{
+    margin-top: 10px;
+  } 
+
+
+  .contact-form input, .contact-form textarea {
+    width: 1000px;
+    padding: 30px;
+
+    margin-top: 20px;
+
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  .btn-sumbit {
+    font-size: 22px;
+    letter-spacing: 4px;
+
+    width: 500px;
+    padding: 30px;
+  }
+
+
+  /*  FOOTER RESPONSIF  */
+
+  footer {
+    height: 350px;
+  }
+
+  .container-footer .title {
+    font-size: 33px;
+    letter-spacing: 4px;
+  }
+
+  .p-title {
+    font-size: 26px;
+  }
+
+  .paragraf {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
