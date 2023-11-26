@@ -621,7 +621,6 @@ footer {
 /* LINK FOOTER */
 a {
     color: var(--headline);
-
 }
 
 .container-footer {
@@ -636,7 +635,7 @@ a {
 }
 
 .title-left .title-h4 {
-    font-size: 50px;
+    font-size: 40px;
     color: #fff;
     text-shadow: 0 1px 5px #ffffff;
 }
