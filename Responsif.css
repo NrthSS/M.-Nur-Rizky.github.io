@@ -28,6 +28,11 @@
 
 @media screen and (max-width: 825px){
 
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
   .logo {
     display: none;
   }
@@ -134,6 +139,11 @@
 
 
 @media screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
     body {
       padding: 0 30px;
     }
