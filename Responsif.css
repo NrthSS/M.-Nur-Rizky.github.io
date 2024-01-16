@@ -139,10 +139,10 @@
 
 
 @media screen and (max-width: 768px) {
-  * {
-    padding: 0;
-    margin: 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
 
     body {
       padding: 0 30px;
